@@ -1,6 +1,7 @@
 * git for windows (https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe)
 * 7zip , Notepad++ , ....
-* open_jdk17 LTS (https://download.java.net/java/GA/jdk17/0d483333a00540d886896bac774ff48b/35/GPL/openjdk-17_windows-x64_bin.zip)
+* jdk 17 LTS (https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe)
+ou bien open_jdk17 LTS (https://download.java.net/java/GA/jdk17/0d483333a00540d886896bac774ff48b/35/GPL/openjdk-17_windows-x64_bin.zip)
 * eclipse_09_2021_jee avec maven et java 16_ou_17 intégré (https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip)
 * MariaDB (version open source de MySql , https://mariadb.org/download/ )
 * jboss_wildfly si EJB (https://download.jboss.org/wildfly/24.0.1.Final/wildfly-24.0.1.Final.zip ou ...)

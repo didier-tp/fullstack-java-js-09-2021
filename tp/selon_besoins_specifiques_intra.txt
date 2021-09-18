@@ -1,0 +1,6 @@
+au choix : JEE officiel avec EJB et JAX-RS
+           ou bien Spring et SpringMvc/SpringBoot
+
+------------
+Objectif debut de semaine : Application JEE complete avec IHM simple JSF2
+Objectif fin de semaine : Application JEE avec WS REST et IHM simple Angular
