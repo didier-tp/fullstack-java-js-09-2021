@@ -21,7 +21,7 @@ public class TestDaoCompte {
 	
 	@Test()
 	public void test1() {
-		Compte cptA = compteDAO.save(new Compte(null,"Compte A", 34.7));
+		Compte cptA = compteDAO.save(new Compte(null,"Compte A", 38.67));
 		System.out.println("cptA sauvegardé avec numero/pk = " + cptA.getNumero());
 		
 		Compte cptB = compteDAO.save(new Compte(null,"Compte B", 34.7));
