@@ -26,4 +26,7 @@ public interface CompteDAO  extends JpaRepository<Compte,Long> {
 	//de nommage des méthodes de SpringData
 	//avantage = pas besoin de coder la requête , tout est automatique (code prédéfini)
 	List<Compte> findBySoldeGreaterThanEqual(double soldeMini);
+	
+	//via convention de nommage de springData
+	List<Compte> findByDetenteurNumero(long  numClient);
 }

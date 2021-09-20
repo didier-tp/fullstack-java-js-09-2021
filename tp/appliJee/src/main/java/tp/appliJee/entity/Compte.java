@@ -21,6 +21,9 @@ public class Compte {
 	
 	private Double solde;
 	
+	//@ManyToOne(....)
+	private Client detenteur; //+get/set
+	
 
 	public Compte(Long numero, String label, Double solde) {
 		super();
