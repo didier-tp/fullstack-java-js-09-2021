@@ -21,26 +21,27 @@ public class CompteServiceImpl implements CompteService {
 
 	@Override
 	public Compte rechercherCompteParNumero(long numero) {
-		// TODO Auto-generated method stub
-		return null;
+		return compteDAO.findById(numero).orElse(null);
 	}
 
 	@Override
 	public List<Compte> rechercherComptesDuClient(long numClient) {
-		// TODO Auto-generated method stub
-		return null;
+		return compteDAO.findByDetenteurNumero(numClient);
 	}
 
 	@Override
 	public Compte sauvegarderCompte(Compte cpt) {
-		// TODO Auto-generated method stub
-		return null;
+		return compteDAO.save(cpt);
 	}
 
 	@Override
 	public void transferer(double montant, long numCptDeb, long numCptCred) {
-		// TODO Auto-generated method stub
-
+		Compte cptDeb=compteDAO.findById(numCptDeb).get();
+        cptDeb.setSolde(cptDeb.getSolde() - montant);
+        compteDAO.save(cptDeb); //éventuellement déclenché implicitement si @Transactional
+        Compte cptCred=compteDAO.findById(numCptCred).get();
+        cptCred.setSolde(cptCred.getSolde() + montant);
+        compteDAO.save(cptCred); //éventuellement déclenché implicitement si @Transactional
 	}
 
 }

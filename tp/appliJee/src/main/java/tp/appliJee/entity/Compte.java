@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
 @Entity
@@ -21,7 +23,8 @@ public class Compte {
 	
 	private Double solde;
 	
-	//@ManyToOne(....)
+	@ManyToOne()
+	@JoinColumn(name = "detenteur")
 	private Client detenteur; //+get/set
 	
 
@@ -63,6 +66,14 @@ public class Compte {
 
 	public void setSolde(Double solde) {
 		this.solde = solde;
+	}
+
+	public Client getDetenteur() {
+		return detenteur;
+	}
+
+	public void setDetenteur(Client detenteur) {
+		this.detenteur = detenteur;
 	}
 	
 	
