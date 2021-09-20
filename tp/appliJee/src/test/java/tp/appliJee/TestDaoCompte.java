@@ -1,5 +1,7 @@
 package tp.appliJee;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -26,6 +28,8 @@ public class TestDaoCompte {
 		
 		Compte cptB = compteDAO.save(new Compte(null,"Compte B", 34.7));
 		
+		Compte cptC = compteDAO.save(new Compte(null,"Compte C", 14.7));
+		
 		//relecture en base pour vérifier la bonne insertion:
 		Compte cptARelu = compteDAO.findById(cptA.getNumero()).get();  //optional.get() soulève exception si empty
 	    //Compte cptARelu = compteDAO.findById(cptA.getNumero()).orElse(null); //retourne null si empty
@@ -34,6 +38,10 @@ public class TestDaoCompte {
 		
 		//Assert.assertTrue(...); //si en junit 4
 		Assertions.assertTrue(cptARelu.getLabel().equals(cptA.getLabel())); //si en junit5/jupiter
+		
+		List<Compte> compteAvecSoldeMini20Euros = compteDAO.findSelonSoldeMini(20.0);
+		System.out.println("compteAvecSoldeMini20Euros="+compteAvecSoldeMini20Euros);
+		Assertions.assertTrue(compteAvecSoldeMini20Euros.size()>=2);
 	}
 	
 
