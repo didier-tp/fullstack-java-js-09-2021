@@ -39,8 +39,10 @@ public class TestDaoCompte {
 		//Assert.assertTrue(...); //si en junit 4
 		Assertions.assertTrue(cptARelu.getLabel().equals(cptA.getLabel())); //si en junit5/jupiter
 		
-		List<Compte> compteAvecSoldeMini20Euros = compteDAO.findSelonSoldeMini(20.0);
-		System.out.println("compteAvecSoldeMini20Euros="+compteAvecSoldeMini20Euros);
+		//List<Compte> compteAvecSoldeMini20Euros = compteDAO.findSelonSoldeMini(20.0);
+		List<Compte> compteAvecSoldeMini20Euros = compteDAO.findBySoldeGreaterThanEqual(20.0);
+		
+		System.out.println("** compteAvecSoldeMini20Euros="+compteAvecSoldeMini20Euros);
 		Assertions.assertTrue(compteAvecSoldeMini20Euros.size()>=2);
 	}
 	

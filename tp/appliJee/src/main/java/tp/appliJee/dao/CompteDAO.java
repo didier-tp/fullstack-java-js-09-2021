@@ -21,4 +21,9 @@ public interface CompteDAO  extends JpaRepository<Compte,Long> {
 	//on peut coder un NamedQuery(name="Compte.findSelonSoldeMini" , ...) pour préciser
 	//l'implémentation de cette requete
 	List<Compte> findSelonSoldeMini(double soldeMini);
+	
+	//meme fonctionalité de findSelonSoldeMini mais en respectant des conventions
+	//de nommage des méthodes de SpringData
+	//avantage = pas besoin de coder la requête , tout est automatique (code prédéfini)
+	List<Compte> findBySoldeGreaterThanEqual(double soldeMini);
 }
