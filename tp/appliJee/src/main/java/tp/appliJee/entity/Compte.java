@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @NamedQuery(name="Compte.findSelonSoldeMini",
              query = "SELECT c FROM Compte c WHERE c.solde >= ?1")
@@ -23,6 +25,7 @@ public class Compte {
 	
 	private Double solde;
 	
+	@JsonIgnore()
 	@ManyToOne()
 	@JoinColumn(name = "detenteur")
 	private Client detenteur; //+get/set

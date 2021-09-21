@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Client {
 	@Id
@@ -16,8 +18,12 @@ public class Client {
 	
 	private String nom;
 	private String prenom;
+	
+	@JsonIgnore
 	private String password;
 	
+	@JsonIgnore 
+	//@XmlTransient
 	@OneToMany(mappedBy = "detenteur")  //inverse du manyToOne
 	public List<Compte> comptes;
 	

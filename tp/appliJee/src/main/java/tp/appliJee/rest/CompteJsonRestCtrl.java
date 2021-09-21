@@ -24,11 +24,12 @@ public class CompteJsonRestCtrl {
 	//RECHERCHE UNIQUE selon RESOURCE-ID:
 	//URL de déclenchement: .../appliJee/rest/compte/1
 	@GetMapping(value="/{numCpt}" )
-	public Compte getDeviseByName(@PathVariable("numCpt") Long numeroCpt) {
+	public Compte getCompteByNumero(@PathVariable("numCpt") Long numeroCpt) {
 	    return compteService.rechercherCompteParNumero(numeroCpt);
 	}
 	
 	//méthode qui retourne plusieurs comptes (critere de recherche "numClient")
+	//URL de déclenchement: .../appliJee/rest/compte  ou bien .../appliJee/rest/compte?numClient=1
 	@GetMapping(value="")
 	public List<Compte> getComptesByCriteria(@RequestParam(value="numClient",required=false) Long numClient) {
 		 if(numClient!=null)
