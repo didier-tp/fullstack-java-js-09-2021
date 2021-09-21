@@ -8,6 +8,8 @@ public interface CompteService {
 	
 	Compte rechercherCompteParNumero(long numero);
 	List<Compte> rechercherComptesDuClient(long numClient);
+	List<Compte> rechercherTousLesComptes();
+	
 	
 	Compte sauvegarderCompte(Compte cpt); //save or update
 	

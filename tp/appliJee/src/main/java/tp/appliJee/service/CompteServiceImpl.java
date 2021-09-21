@@ -49,4 +49,9 @@ public class CompteServiceImpl implements CompteService {
         //compteDAO.save(cptCred); //éventuellement déclenché implicitement si @Transactional
 	}
 
+	@Override
+	public List<Compte> rechercherTousLesComptes() {
+		return compteDAO.findAll();
+	}
+
 }
