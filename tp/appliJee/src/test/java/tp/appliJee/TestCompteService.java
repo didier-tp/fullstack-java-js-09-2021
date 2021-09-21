@@ -50,5 +50,38 @@ public class TestCompteService {
 		System.out.println("comptesDuClient1="+comptesDuClient1);
 	}
 	
+	@Test
+	public void testBonTransfert() {
+		initSomeData();
+		double solde1Avant = compteService.rechercherCompteParNumero(1L).getSolde();
+		double solde2Avant = compteService.rechercherCompteParNumero(2L).getSolde();
+		System.out.println("avant bon transfert soldes: " + solde1Avant + " " + solde2Avant);
+		compteService.transferer(20, 1, 2);
+		double solde1Apres = compteService.rechercherCompteParNumero(1L).getSolde();
+		double solde2Apres = compteService.rechercherCompteParNumero(2L).getSolde();
+		System.out.println("apres bon transfert soldes: " + solde1Apres + " " + solde2Apres);
+		Assertions.assertEquals(solde1Apres,solde1Avant - 20 , 0.001);
+		Assertions.assertEquals(solde2Apres,solde2Avant + 20 , 0.001);
+	}
+	
+	@Test
+	public void testMauvaisTransfert() {
+		initSomeData();
+		double solde1Avant = compteService.rechercherCompteParNumero(1L).getSolde();
+		double solde2Avant = compteService.rechercherCompteParNumero(2L).getSolde();
+		System.out.println("avant mauvais transfert soldes: " + solde1Avant + " " + solde2Avant);
+		try {
+			compteService.transferer(20, 1, -2); //le compte -2 n'existe pas
+		} catch (Exception e) {
+			//e.printStackTrace();
+			System.err.println("erreur normale : " + e.getMessage());
+		}
+		double solde1Apres = compteService.rechercherCompteParNumero(1L).getSolde();
+		double solde2Apres = compteService.rechercherCompteParNumero(2L).getSolde();
+		System.out.println("apres mauvais transfert soldes: " + solde1Apres + " " + solde2Apres);
+		Assertions.assertEquals(solde1Apres,solde1Avant - 0 , 0.001);
+		Assertions.assertEquals(solde2Apres,solde2Avant + 0 , 0.001);
+	}
+	
 	//+futur test transferer
 }

@@ -11,7 +11,7 @@ import tp.appliJee.entity.Compte;
 
 @Service //@Component de type "business service"
 //@TransactionManagement et @TransactionAttribute d'office sur EJB
-@Transactional // à expliciter pour spring
+//@Transactional // à expliciter pour spring
 public class CompteServiceImpl implements CompteService {
 	
 	//@EJB : injection de dépendances vers EJB (local ou remote)
@@ -35,10 +35,12 @@ public class CompteServiceImpl implements CompteService {
 	}
 
 	@Override
+	@Transactional
 	public void transferer(double montant, long numCptDeb, long numCptCred) {
 		Compte cptDeb=compteDAO.findById(numCptDeb).get();
         cptDeb.setSolde(cptDeb.getSolde() - montant);
         compteDAO.save(cptDeb); //éventuellement déclenché implicitement si @Transactional
+        
         Compte cptCred=compteDAO.findById(numCptCred).get();
         cptCred.setSolde(cptCred.getSolde() + montant);
         compteDAO.save(cptCred); //éventuellement déclenché implicitement si @Transactional
