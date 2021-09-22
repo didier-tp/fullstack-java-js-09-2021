@@ -3,9 +3,11 @@ package tp.appliJee.rest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -66,6 +68,12 @@ public class CompteJsonRestCtrl {
 	        return cpt;
 	}
 	
+	
+	@DeleteMapping(value="/{numCpt}" ) 
+	public void deleteCompteByNumero(@PathVariable("numCpt") Long numeroCpt) {
+		compteService.deleteCompteByNum(numeroCpt);//avec NotFoudException / 404
+	}
+	
 	//méthode qui retourne plusieurs comptes (critere de recherche "numClient")
 	//URL de déclenchement: .../appliJee/bank-api/compte  ou bien .../appliJee/bank-api/compte?numClient=1
 	@GetMapping(value="")
@@ -77,14 +85,25 @@ public class CompteJsonRestCtrl {
 	}
 	
 	//URL de déclenchement: http://localhost:8080/appliJee/bank-api/compte
-	//à appler en mode POST avec dans la partie body 
+	//à appeler en mode POST avec dans la partie body 
 	//{ "numero" : null , "label" : "compteXy" , "solde" : 60.0 }
 	//ou bien { "label" : "compteXy" , "solde" : 60.0 }
 	@PostMapping(value="" )
 	Compte postNewCompte(@RequestBody Compte nouveauCompte) {
 	System.out.println("nouveau compte:" + nouveauCompte);
-	   compteService.sauvegarderCompte(nouveauCompte);
+	   compteService.ajouterCompte(nouveauCompte);
 	return nouveauCompte; //avec .numero auto incrémenté
+	}
+	
+	
+	//URL de déclenchement: http://localhost:8080/appliJee/bank-api/compte
+	//à appeler en mode PUT avec dans la partie body 
+	//{ "numero" : 1 , "label" : "compteAa" , "solde" : 61.0 }
+	@PutMapping(value="" )
+	Compte updateCompte(@RequestBody Compte compte) {
+		System.out.println("compte a mettre a jour:" + compte);
+		compteService.updateCompte(compte); //avec NotFoudException / 404
+	    return compte; //mis à jour en base coté serveur
 	}
 	
 	

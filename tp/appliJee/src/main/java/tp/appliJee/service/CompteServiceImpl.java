@@ -8,15 +8,16 @@ import org.springframework.transaction.annotation.Transactional;
 
 import tp.appliJee.dao.CompteDAO;
 import tp.appliJee.entity.Compte;
+import tp.appliJee.exception.NotFoundException;
 
-@Service //@Component de type "business service"
+@Service // @Component de type "business service"
 //@TransactionManagement et @TransactionAttribute d'office sur EJB
 //@Transactional // à expliciter pour spring
 public class CompteServiceImpl implements CompteService {
-	
-	//@EJB : injection de dépendances vers EJB (local ou remote)
-	//@Inject : injection de dépendance via CDI (vers ejb local ou ....)
-	@Autowired //injection de dépendance Spring
+
+	// @EJB : injection de dépendances vers EJB (local ou remote)
+	// @Inject : injection de dépendance via CDI (vers ejb local ou ....)
+	@Autowired // injection de dépendance Spring
 	private CompteDAO compteDAO;
 
 	@Override
@@ -37,21 +38,48 @@ public class CompteServiceImpl implements CompteService {
 	@Override
 	@Transactional
 	public void transferer(double montant, long numCptDeb, long numCptCred) {
-		Compte cptDeb=compteDAO.findById(numCptDeb).get();
-        cptDeb.setSolde(cptDeb.getSolde() - montant);
-        //compteDAO.save(cptDeb); //éventuellement déclenché implicitement si @Transactional
-                                  //avec jpa/hibernate les modifs en mémoire
-                                  //sur les objets persistants sont automatiquement
-                                  //répercutées en base lors du commit
-        
-        Compte cptCred=compteDAO.findById(numCptCred).get();
-        cptCred.setSolde(cptCred.getSolde() + montant);
-        //compteDAO.save(cptCred); //éventuellement déclenché implicitement si @Transactional
+		Compte cptDeb = compteDAO.findById(numCptDeb).get();
+		cptDeb.setSolde(cptDeb.getSolde() - montant);
+		// compteDAO.save(cptDeb); //éventuellement déclenché implicitement si
+		// @Transactional
+		// avec jpa/hibernate les modifs en mémoire
+		// sur les objets persistants sont automatiquement
+		// répercutées en base lors du commit
+
+		Compte cptCred = compteDAO.findById(numCptCred).get();
+		cptCred.setSolde(cptCred.getSolde() + montant);
+		// compteDAO.save(cptCred); //éventuellement déclenché implicitement si
+		// @Transactional
 	}
 
 	@Override
 	public List<Compte> rechercherTousLesComptes() {
 		return compteDAO.findAll();
+	}
+
+	
+	@Override
+	public Compte updateCompte(Compte cpt) throws NotFoundException {
+		if (cpt.getNumero()!=null || compteDAO.existsById(cpt.getNumero()))
+			return compteDAO.save(cpt);
+		else
+			throw new NotFoundException("aucun compte existe avec numero=" + cpt.getNumero());
+	}
+	
+	@Override
+	public Compte ajouterCompte(Compte cpt) {
+		if (cpt.getNumero()==null || !compteDAO.existsById(cpt.getNumero()))
+			return compteDAO.save(cpt);
+		else
+			throw new RuntimeException("compte déja existant avec numero=" + cpt.getNumero());
+	}
+
+	@Override
+	public void deleteCompteByNum(Long numCpt) throws NotFoundException {
+		if (numCpt!=null || compteDAO.existsById(numCpt))
+		   compteDAO.deleteById(numCpt);
+		else
+			throw new NotFoundException("aucun compte existe avec numero=" + numCpt);
 	}
 
 }
