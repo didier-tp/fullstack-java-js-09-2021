@@ -60,10 +60,10 @@ public class CompteServiceImpl implements CompteService {
 	
 	@Override
 	public Compte updateCompte(Compte cpt) throws NotFoundException {
-		if (cpt.getNumero()!=null || compteDAO.existsById(cpt.getNumero()))
+		if (cpt.getNumero()!=null && compteDAO.existsById(cpt.getNumero()))
 			return compteDAO.save(cpt);
 		else
-			throw new NotFoundException("aucun compte existe avec numero=" + cpt.getNumero());
+			throw new NotFoundException("update impossible, aucun compte existe avec numero=" + cpt.getNumero());
 	}
 	
 	@Override
@@ -71,15 +71,15 @@ public class CompteServiceImpl implements CompteService {
 		if (cpt.getNumero()==null || !compteDAO.existsById(cpt.getNumero()))
 			return compteDAO.save(cpt);
 		else
-			throw new RuntimeException("compte déja existant avec numero=" + cpt.getNumero());
+			throw new RuntimeException("ajout impossible , compte déja existant avec numero=" + cpt.getNumero());
 	}
 
 	@Override
 	public void deleteCompteByNum(Long numCpt) throws NotFoundException {
-		if (numCpt!=null || compteDAO.existsById(numCpt))
+		if (numCpt!=null && compteDAO.existsById(numCpt))
 		   compteDAO.deleteById(numCpt);
 		else
-			throw new NotFoundException("aucun compte existe avec numero=" + numCpt);
+			throw new NotFoundException("aucun compte ne peur etre supprime avec numero=" + numCpt);
 	}
 
 }
