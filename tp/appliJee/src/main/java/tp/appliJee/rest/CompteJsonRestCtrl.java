@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import tp.appliJee.dto.Virement;
 import tp.appliJee.entity.Compte;
 import tp.appliJee.exception.NotFoundException;
 import tp.appliJee.service.CompteService;
@@ -94,6 +95,27 @@ public class CompteJsonRestCtrl {
 	   compteService.ajouterCompte(nouveauCompte);
 	return nouveauCompte; //avec .numero auto incrémenté
 	}
+	
+	//URL de déclenchement: http://localhost:8080/appliJee/bank-api/compte/virement
+	//à appeler en mode POST avec dans la partie body 
+	//{ "montant" : 50 , "numCptDeb" : 1 , "numCptCred" : 2}
+	//réponse : { "montant" : 50 , "numCptDeb" : 1 , "numCptCred" : 2 , "statut:" true ,
+	//            "message" : "virement bien effectue"}
+	@PostMapping(value="/virement" )
+	Virement postDemandeVirement(@RequestBody Virement virement) {
+		System.out.println("virement:" + virement);
+		try {
+			compteService.transferer(virement.getMontant(), virement.getNumCptDeb(), virement.getNumCptCred());
+		    virement.setStatut(true);
+		    virement.setMessage("virement bien effectue");
+		} catch (Exception e) {
+			e.printStackTrace();
+			virement.setStatut(false);
+		    virement.setMessage("echec virement");
+		}
+		return virement; //avec .numero auto incrémenté
+	}
+		
 	
 	
 	//URL de déclenchement: http://localhost:8080/appliJee/bank-api/compte
