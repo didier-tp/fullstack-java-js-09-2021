@@ -11,6 +11,9 @@ import { ZzComponent } from './basic/zz/zz.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { TvaComponent } from './basic/tva/tva.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ComptesComponent } from './comptes/comptes.component';
+import { VirementComponent } from './virement/virement.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { TvaComponent } from './basic/tva/tva.component';
     XyComponent,
     ZzComponent,
     TvaComponent,
+    WelcomeComponent,
+    ComptesComponent,
+    VirementComponent,
   ],
   imports: [
     BrowserModule,

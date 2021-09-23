@@ -11,7 +11,7 @@ taux :number = 20 ;
 tva :number =  0 ; 
 ttc :number = 0 ;
 
-listeTaux = [ 5 , 10 , 20]  ;          
+listeTaux :number[] = [ 5 , 10 , 20]  ;          
 
 onCalculerTvaEtTtc(){
   this.tva = this.ht * this.taux / 100;
