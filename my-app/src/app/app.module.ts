@@ -15,6 +15,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ComptesComponent } from './comptes/comptes.component';
 import { VirementComponent } from './virement/virement.component';
 import { TogglePanelComponent } from './toggle-panel/toggle-panel.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TogglePanelComponent } from './toggle-panel/toggle-panel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule , 
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

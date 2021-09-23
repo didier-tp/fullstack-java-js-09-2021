@@ -2,8 +2,8 @@
     <!-- <div class="card-header bg-info"> -->
     <h4 class="card-header bg-primary">
     <a class="text-light" (click)="toggleP = !toggleP" >{{title}}
-    <span [style.visibility]="toggleP?'hidden':'visible'"> + </span>
-    <span [style.visibility]="toggleP?'visible':'hidden'"> - </span>
+    <span [style.visibility]="toggleP?'hidden':'visible'">+</span>
+    <span [style.visibility]="toggleP?'visible':'hidden'">-</span>
 </a></h4>
 <!-- </div> -->
 <div class="card-body collapse " [class.show]="toggleP">
