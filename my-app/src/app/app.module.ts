@@ -10,6 +10,7 @@ import { XyComponent } from './basic/xy/xy.component';
 import { ZzComponent } from './basic/zz/zz.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { TvaComponent } from './basic/tva/tva.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
     CalculatriceComponent,
     XyComponent,
     ZzComponent,
+    TvaComponent,
   ],
   imports: [
     BrowserModule,
