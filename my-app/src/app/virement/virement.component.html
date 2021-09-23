@@ -1,6 +1,12 @@
 <p>virement</p>
-<label>montant:</label><input type="number" [(ngModel)]="virement.montant" /> <br/>
-<label>numCptDeb:</label><input type="number" [(ngModel)]="virement.numCptDeb" /> <br/>
-<label>numCptCred:</label><input type="number" [(ngModel)]="virement.numCptCred" /> <br/> 
-<input type="button"  value="effectuer virement" (click)="onVirement()" /> <br/>
+<form #formVirement="ngForm">
+    <label>montant:</label><input type="number" required 
+     [(ngModel)]="virement.montant" name="montant" /> <br/>
+    <label>numCptDeb:</label><input type="number" 
+          name="numCptDeb" required [(ngModel)]="virement.numCptDeb" /> <br/>
+    <label>numCptCred:</label><input type="number" 
+           name="numCptCred" required [(ngModel)]="virement.numCptCred" /> <br/> 
+    <input type="button"  value="effectuer virement"
+     (click)="onVirement()" [disabled]="!formVirement.form.valid" /> <br/>
+</form>
 {{message}}
