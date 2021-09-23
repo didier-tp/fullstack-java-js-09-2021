@@ -3,9 +3,13 @@ username: <input [(ngModel)]="username" /> <br/>
 <button (click)="onAction()">hello</button> <br/>
 message: <b>{{message}}</b>
 <hr/>
-<app-calculatrice></app-calculatrice>
-<hr/>
-<app-tva></app-tva>
+<toggle-panel title="calculatrice">
+   <app-calculatrice></app-calculatrice>
+</toggle-panel>
+<br/>
+<toggle-panel title="tva">
+   <app-tva></app-tva>
+</toggle-panel>
 <hr/>
 <app-xy></app-xy>
 <hr/>

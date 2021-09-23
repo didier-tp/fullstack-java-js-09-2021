@@ -14,6 +14,7 @@ import { TvaComponent } from './basic/tva/tva.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ComptesComponent } from './comptes/comptes.component';
 import { VirementComponent } from './virement/virement.component';
+import { TogglePanelComponent } from './toggle-panel/toggle-panel.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { VirementComponent } from './virement/virement.component';
     WelcomeComponent,
     ComptesComponent,
     VirementComponent,
+    TogglePanelComponent,
   ],
   imports: [
     BrowserModule,
