@@ -1,0 +1,5 @@
+"use strict";
+var x;
+x = 5;
+console.log(x);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZjEuanMiLCJzb3VyY2VSb290Ijoic3JjLyIsInNvdXJjZXMiOlsiZjEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLElBQUksQ0FBUSxDQUFDO0FBQ2IsQ0FBQyxHQUFDLENBQUMsQ0FBQztBQUNKLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMifQ==
