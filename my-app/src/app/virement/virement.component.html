@@ -1,1 +1,6 @@
-<p>virement works!</p>
+<p>virement</p>
+<label>montant:</label><input type="number" [(ngModel)]="virement.montant" /> <br/>
+<label>numCptDeb:</label><input type="number" [(ngModel)]="virement.numCptDeb" /> <br/>
+<label>numCptCred:</label><input type="number" [(ngModel)]="virement.numCptCred" /> <br/> 
+<input type="button"  value="effectuer virement" (click)="onVirement()" /> <br/>
+{{message}}
