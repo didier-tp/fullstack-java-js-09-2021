@@ -1,12 +1,16 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Compte } from '../data/compte';
+import { Virement } from '../data/virement';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CompteService {
+
+  private _headers = new HttpHeaders({'Content-Type': 'application/json'});
+
 //pour v1 (simulation)
   private tabComptes = [
     new Compte(1,"compte A",50.0) ,
@@ -23,6 +27,13 @@ export class CompteService {
       //NB: l'url relative ./bank-api/... n'est possible en développement
       //que via ng serve --proxy-config proxy.conf.json
       return this._http.get<Compte[]>(url);
+  }
+
+  public effectuerVirement$(virement : Virement) : Observable<Virement>{
+    let url = "./bank-api/compte/virement"
+    //NB: l'url relative ./bank-api/... n'est possible en développement
+    //que via ng serve --proxy-config proxy.conf.json
+    return this._http.post<Virement>(url,virement);
   }
 
   //injection de dépendance du service technique prédéfini HttpClient
