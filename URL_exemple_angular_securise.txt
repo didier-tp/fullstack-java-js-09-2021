@@ -1,0 +1,6 @@
+https://github.com/didier-tp/al9_isika_frontend   sous partie tp-js/my-app 
+npm install 
+------------
+le serveur qui va avec :
+https://github.com/didier-mycontrib/tp_node_js sous projet backend-tp-api
+npm install et lancerNodeJs_noDB
