@@ -1,2 +1,6 @@
 
-<p class="piedPage">footer </p>
+<p class="piedPage">footer couleurFond :
+    <select [(ngModel)]="preferencesService.couleurFondPreferee">
+        <option *ngFor="let c of listeCouleurs">{{c}}</option>
+    </select>
+ </p>
