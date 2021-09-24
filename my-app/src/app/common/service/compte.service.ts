@@ -18,7 +18,10 @@ export class CompteService {
   //pour methode retournant un Observable
   public rechercherComptesSelonNumClient$(numCli : number) : Observable<Compte[]>{
       //return of(this.tabComptes); //v1 , simulation
-      let url = "http://localhost:8080/appliJee/bank-api/compte?numClient=" + numCli;
+      //let url = "http://localhost:8080/appliJee/bank-api/compte?numClient=" + numCli;
+      let url = "./bank-api/compte?numClient=" + numCli;
+      //NB: l'url relative ./bank-api/... n'est possible en développement
+      //que via ng serve --proxy-config proxy.conf.json
       return this._http.get<Compte[]>(url);
   }
 

@@ -22,9 +22,9 @@ import tp.appliJee.service.CompteService;
 
 @RestController
 //la partie de l'URL "bank-api" designe une API REST (paquet de web services REST lié à un domaine
-//et gérer par une même application) . Utile si aiguillage au niveau d'un éventuel serveur intermédiaire
+//et géré par une même application) . Utile si aiguillage au niveau d'un éventuel serveur intermédiaire
 @RequestMapping(value="/bank-api/compte" , headers="Accept=application/json")
-@CrossOrigin(value = "*" , methods = {  RequestMethod.GET , RequestMethod.POST}) //configurer autorisations CORS
+//@CrossOrigin(value = "*" , methods = {  RequestMethod.GET , RequestMethod.POST}) //configurer autorisations CORS
 public class CompteJsonRestCtrl {
 	
 	@Autowired //ou @Inject
