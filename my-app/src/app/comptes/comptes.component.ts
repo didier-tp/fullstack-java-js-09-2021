@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Compte } from '../common/data/compte';
+import { CompteService } from '../common/service/compte.service';
 
 @Component({
   selector: 'app-comptes',
@@ -9,13 +10,18 @@ import { Compte } from '../common/data/compte';
 export class ComptesComponent implements OnInit {
 
   numClient : number=0; //à saisir
-  listeComptes : Compte[]=[]; //à afficher.
+  listeComptes : Compte[] = []; //à afficher.
 
   onRechercherComptesDuClient(){
-
+      this._compteService.rechercherComptesSelonNumClient$(this.numClient)
+         .subscribe( 
+           (tCompte : Compte[])=>{ this.listeComptes = tCompte },
+           (err)=>{ console.log(err) }
+          );
   }
 
-  constructor() { }
+  //injection de dépendance
+  constructor(private _compteService : CompteService) { }
 
   ngOnInit(): void {
   }
