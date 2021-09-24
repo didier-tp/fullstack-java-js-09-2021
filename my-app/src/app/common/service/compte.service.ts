@@ -33,7 +33,7 @@ export class CompteService {
     let url = "./bank-api/compte/virement"
     //NB: l'url relative ./bank-api/... n'est possible en développement
     //que via ng serve --proxy-config proxy.conf.json
-    return this._http.post<Virement>(url,virement);
+    return this._http.post<Virement>(url,virement,{headers: this._headers});
   }
 
   //injection de dépendance du service technique prédéfini HttpClient
