@@ -28,4 +28,8 @@
       </div>
     </div> 
 </form>
-{{message}}
+<span [style.color]="ok?'green':'red'">{{message}} </span>
+<hr/>
+<input type="button"  [style.visibility]="ok?'visible':'hidden'"
+         value="naviguer vers liste comptes" class="btn btn-primary"
+           (click)="onNaviguerListeCommptes()"  />

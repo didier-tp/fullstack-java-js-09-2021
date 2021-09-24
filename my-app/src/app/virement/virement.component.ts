@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Virement } from '../common/data/virement';
 import { CompteService } from '../common/service/compte.service';
 
@@ -11,8 +12,9 @@ export class VirementComponent implements OnInit {
 
   //saisir des paramétre du virement 
   //qui sera déléguer au WS REST java/spring`
-  virement : Virement = new Virement();
+  virement : Virement = new Virement(10,1,2);
   message : string = "";
+  ok : boolean = false;
 
   onVirement(){
     //v1: on va afficher les valeurs saisies
@@ -26,14 +28,22 @@ export class VirementComponent implements OnInit {
   }
 
   gererVirementEffectue(virementEffectue : Virement){
+    console.log("virementEffectue=" + JSON.stringify(virementEffectue))
      if(virementEffectue.statut==true){
        this.message="ok " + virementEffectue.message;
+       this.ok=true;
      }else{
       this.message="echec " + virementEffectue.message;
+      this.ok=false;
      }
   }
 
-  constructor(private _compteService : CompteService) { }
+  onNaviguerListeCommptes(){
+    this._router.navigateByUrl("/ngr-comptes");
+  }
+
+  constructor(private _compteService : CompteService,
+              private _router : Router) { }
 
   ngOnInit(): void {
   }
