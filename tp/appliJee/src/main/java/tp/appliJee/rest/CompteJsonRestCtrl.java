@@ -3,6 +3,7 @@ package tp.appliJee.rest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +24,7 @@ import tp.appliJee.service.CompteService;
 //la partie de l'URL "bank-api" designe une API REST (paquet de web services REST lié à un domaine
 //et gérer par une même application) . Utile si aiguillage au niveau d'un éventuel serveur intermédiaire
 @RequestMapping(value="/bank-api/compte" , headers="Accept=application/json")
+@CrossOrigin(value = "*" , methods = {  RequestMethod.GET , RequestMethod.POST}) //configurer autorisations CORS
 public class CompteJsonRestCtrl {
 	
 	@Autowired //ou @Inject

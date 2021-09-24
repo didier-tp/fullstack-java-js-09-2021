@@ -13,11 +13,15 @@ export class ComptesComponent implements OnInit {
   listeComptes : Compte[] = []; //à afficher.
 
   onRechercherComptesDuClient(){
+      //1.debut 
       this._compteService.rechercherComptesSelonNumClient$(this.numClient)
          .subscribe( 
-           (tCompte : Compte[])=>{ this.listeComptes = tCompte },
+           (tCompte : Compte[])=>{ this.listeComptes = tCompte; 
+                                  // 3. en différé qd réponse prête
+                                  },
            (err)=>{ console.log(err) }
           );
+      //2. eventuelle suite de l'execution sans attente
   }
 
   //injection de dépendance

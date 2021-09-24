@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Compte } from '../data/compte';
@@ -16,8 +17,11 @@ export class CompteService {
   //nom de methode se terminant par $ = convention de nommage
   //pour methode retournant un Observable
   public rechercherComptesSelonNumClient$(numCli : number) : Observable<Compte[]>{
-      return of(this.tabComptes); //v1 , simulation
+      //return of(this.tabComptes); //v1 , simulation
+      let url = "http://localhost:8080/appliJee/bank-api/compte?numClient=" + numCli;
+      return this._http.get<Compte[]>(url);
   }
 
-  constructor() { }
+  //injection de dépendance du service technique prédéfini HttpClient
+  constructor(private _http : HttpClient) { }
 }
