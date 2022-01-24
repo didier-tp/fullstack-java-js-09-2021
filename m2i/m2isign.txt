@@ -1,2 +1,0 @@
-URL = sign.m2iformation.fr 
-numero de session: SE21-169516		Mot de passe: indique durant la formation
