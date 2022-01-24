@@ -13,5 +13,6 @@ public interface CompteDao {
 	//ou bien Compte findById(Long numCpt); si pas de spring ou jdk 1.7 ou 1.6
 	void deleteById(Long numCpt);
 	List<Compte> findAll();
+	List<Compte> findComptesByClient(Long numClient);
 	//...
 }

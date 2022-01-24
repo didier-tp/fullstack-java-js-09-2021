@@ -52,4 +52,11 @@ public class CompteDaoImpl implements CompteDao {
 				            .getResultList();
 	}
 
+	@Override
+	public List<Compte> findComptesByClient(Long numClient) {
+		return entityManager.createNamedQuery("Compte.findComptesByClient", Compte.class)
+				.setParameter("numCli", numClient) //:numCli dans JPQL
+				.getResultList();
+	}
+
 }

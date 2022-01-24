@@ -4,8 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name = "Compte.findComptesByClient" , 
+        query = "SELECT cpt FROM Compte cpt WHERE cpt.proprietaire.numero = :numCli")
+//ou bien "SELECT cpt FROM Client cli JOIN cli.comptes cpt WHERE cli.numero = :numCli"
 public class Compte {
 	
 	@Id
@@ -13,6 +19,10 @@ public class Compte {
 	private Long numero;
 	private String label;
 	private Double solde;
+	
+	@ManyToOne
+	@JoinColumn(name = "proprietaire") //fk
+	private Client proprietaire;
 	
 	
 	public Compte() {
@@ -49,6 +59,14 @@ public class Compte {
 	}
 	public void setSolde(Double solde) {
 		this.solde = solde;
+	}
+
+	public Client getProprietaire() {
+		return proprietaire;
+	}
+
+	public void setProprietaire(Client proprietaire) {
+		this.proprietaire = proprietaire;
 	}
 	
 	
