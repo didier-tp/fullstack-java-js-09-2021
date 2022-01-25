@@ -1,15 +1,19 @@
 package tp.jeeApp.rest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import tp.jeeApp.entity.Compte;
 import tp.jeeApp.service.CompteService;
 
-@RestController //composant spring de type crontroleur pour WS REST
+@RestController //composant spring de type crontroleur pour WS REST **
 @RequestMapping(value="/bank-api/compte" , headers="Accept=application/json")
 public class CompteRestCtrl {
 	
@@ -24,6 +28,18 @@ public class CompteRestCtrl {
 	@RequestMapping(value="/{numCompte}" , method=RequestMethod.GET)
 	public Compte getCompteByNum(@PathVariable("numCompte") Long numCpt) {
 	     return compteService.rechercherCompteParNum(numCpt);
+	}
+	
+	//RECHERCHE MULTIPLE :
+	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
+	//ou bien http://localhost:8080/jeeApp/bank-api/compte?numClient=1
+	@RequestMapping(value="" , method=RequestMethod.GET)
+	public List<Compte> getComptesByCriteria(
+			@RequestParam(value="numClient",required=false)	Long numClient) {
+	if(numClient==null)
+		return compteService.rechercherTousLesComptes();
+	else
+		return  compteService.rechercherComptesDuClient(numClient);
 	}
 
 }

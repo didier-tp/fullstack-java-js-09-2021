@@ -11,5 +11,6 @@ public interface CompteService {
 	Compte updateCompte(Compte cpt);
 	void  supprimerCompte(long numCpt);
 	List<Compte> rechercherComptesDuClient(long numClient);
+	List<Compte> rechercherTousLesComptes();
     void transferer(double montant,long numCptDeb,long numCptCred);
 }

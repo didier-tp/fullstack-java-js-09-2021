@@ -8,6 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @NamedQuery(name = "Compte.findComptesByClient" , 
         query = "SELECT cpt FROM Compte cpt WHERE cpt.proprietaire.numero = :numCli")
@@ -20,6 +22,7 @@ public class Compte {
 	private String label;
 	private Double solde;
 	
+	@JsonIgnore //ignorer .proprietaire pour java --> json
 	@ManyToOne
 	@JoinColumn(name = "proprietaire") //fk
 	private Client proprietaire;
