@@ -10,6 +10,7 @@ import tp.jeeApp.entity.Compte;
 
 @Service //@Component spring de type service fonctionnel
 //@Transactional
+//@TransactionManagement(CONTAINER) @TransactionAttribute(REQUIRED) par défaut sur EJB
 public class CompteServiceImpl implements CompteService {
 	
 	//@EJB (pour injecter EJB @Local ou bien @Remote)
@@ -53,8 +54,13 @@ public class CompteServiceImpl implements CompteService {
 
 	@Override
 	public void transferer(double montant, long numCptDeb, long numCptCred) {
-		// TODO Auto-generated method stub
-
+		Compte cptDeb = compteDao.findById(numCptDeb).get();
+		cptDeb.setSolde(cptDeb.getSolde()-montant);
+		compteDao.save(cptDeb); //utile seulement pour version sans @Transactional
+		
+		Compte cptCred = compteDao.findById(numCptCred).get();
+		cptCred.setSolde(cptCred.getSolde()+montant);
+		compteDao.save(cptCred); //utile seulement pour version sans @Transactional
 	}
 
 }
