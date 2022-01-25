@@ -122,6 +122,10 @@ public class TestCompteDao {
 			System.err.println(e.getMessage());
 		}
 		
+		List<Client> clientsJeanBons = clientDao.findByPrenomAndNom("jean","Bon");
+		Assertions.assertTrue(clientsJeanBons.size() ==1);
+		System.out.println("clientsJeanBons=" + clientsJeanBons.get(0));
+		
 	}
 	
 	/*
