@@ -3,6 +3,7 @@ package tp.jeeApp.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -24,7 +25,8 @@ public class Client {
 	private String prenom;
 	private String nom;
 
-	@OneToMany(mappedBy = "proprietaire" , fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "proprietaire" , fetch = FetchType.LAZY /* , 
+			 cascade = { CascadeType.PERSIST , CascadeType.MERGE}*/ ) //ou bien CascadeType.ALL
 	private List<Compte> comptes;
 	
 	
@@ -44,6 +46,9 @@ public class Client {
 			this.comptes=new ArrayList<Compte>();
 		}
 		this.comptes.add(cpt);
+		//plus mise à jour automatique de la relation inverse:
+		cpt.setProprietaire(this); //utile pour cohérence immédiate en mémoire
+		                           //utile pour éventuelle cascade client --> comptes
 	}
 
 	@Override
