@@ -4,12 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import tp.jeeApp.dao.CompteDao;
 import tp.jeeApp.entity.Compte;
 
 @Service //@Component spring de type service fonctionnel
-//@Transactional
+@Transactional //de spring (à expliciter)
 //@TransactionManagement(CONTAINER) @TransactionAttribute(REQUIRED) par défaut sur EJB
 public class CompteServiceImpl implements CompteService {
 	
