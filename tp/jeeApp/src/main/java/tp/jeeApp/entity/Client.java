@@ -3,7 +3,6 @@ package tp.jeeApp.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -13,6 +12,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter @Setter
+@NoArgsConstructor
 @Entity
 @Table(name="client")
 public class Client {
@@ -30,9 +35,7 @@ public class Client {
 	private List<Compte> comptes;
 	
 	
-	public Client() {
-		super();
-	}
+	
 
 	public Client(Long numero, String prenom, String nom) {
 		super();
@@ -56,37 +59,13 @@ public class Client {
 		return "Client [numero=" + numero + ", prenom=" + prenom + ", nom=" + nom + "]";
 	}
 
-	public Long getNumero() {
-		return numero;
-	}
-
 	public void setNumero(Long numero) {
-		this.numero = numero;
+		if(numero <0)
+			throw new RuntimeException("numero négatif invalid");
+		else
+		   this.numero = numero;
 	}
 
-	public String getPrenom() {
-		return prenom;
-	}
-
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
-
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public List<Compte> getComptes() {
-		return comptes;
-	}
-
-	public void setComptes(List<Compte> comptes) {
-		this.comptes = comptes;
-	}
 	
 	
 

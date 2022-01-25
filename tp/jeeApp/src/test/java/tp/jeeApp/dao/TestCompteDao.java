@@ -116,6 +116,12 @@ public class TestCompteDao {
 		System.out.println("comptes du client1:");
 		comptes.stream().forEach( (c)->{ System.out.println("\t" + c.toString()); });
 		
+		try {
+			client1.setNumero(-1L);
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		
 	}
 	
 	/*
