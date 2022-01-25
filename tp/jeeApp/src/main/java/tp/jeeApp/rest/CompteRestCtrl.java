@@ -1,9 +1,9 @@
 package tp.jeeApp.rest;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,15 +17,12 @@ import tp.jeeApp.service.CompteService;
 @RequestMapping(value="/bank-api/compte" , headers="Accept=application/json")
 public class CompteRestCtrl {
 	
-	
 	@Autowired //ou @Inject
-	private CompteService compteService;
-	//internal business service or DAO
-	
+	private CompteService compteService;//internal business service or DAO
 	
 	//RECHERCHE UNIQUE selon RESOURCE-ID:
 	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte/1
-	@RequestMapping(value="/{numCompte}" , method=RequestMethod.GET)
+	@GetMapping(value="/{numCompte}" )
 	public Compte getCompteByNum(@PathVariable("numCompte") Long numCpt) {
 	     return compteService.rechercherCompteParNum(numCpt);
 	}
@@ -33,7 +30,7 @@ public class CompteRestCtrl {
 	//RECHERCHE MULTIPLE :
 	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
 	//ou bien http://localhost:8080/jeeApp/bank-api/compte?numClient=1
-	@RequestMapping(value="" , method=RequestMethod.GET)
+	@GetMapping(value="")
 	public List<Compte> getComptesByCriteria(
 			@RequestParam(value="numClient",required=false)	Long numClient) {
 	if(numClient==null)

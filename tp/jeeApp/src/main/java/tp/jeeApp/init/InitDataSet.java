@@ -12,7 +12,7 @@ import tp.jeeApp.entity.Compte;
 import tp.jeeApp.service.CompteService;
 
 @Component
-@Profile("dev")  //ce code n'est activé qu'avec le profil "dev"
+@Profile("initByJava")  //ce code n'est activé qu'avec le profil "initByJava"
                  //à sélectionner au démarrage de l'appli
 public class InitDataSet {
 
