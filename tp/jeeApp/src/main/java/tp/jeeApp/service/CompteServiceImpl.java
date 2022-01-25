@@ -55,13 +55,17 @@ public class CompteServiceImpl implements CompteService {
 
 	@Override
 	public void transferer(double montant, long numCptDeb, long numCptCred) {
-		Compte cptDeb = compteDao.findById(numCptDeb).get();
-		cptDeb.setSolde(cptDeb.getSolde()-montant);
-		compteDao.save(cptDeb); //utile seulement pour version sans @Transactional
-		
-		Compte cptCred = compteDao.findById(numCptCred).get();
-		cptCred.setSolde(cptCred.getSolde()+montant);
-		compteDao.save(cptCred); //utile seulement pour version sans @Transactional
+		try {
+			Compte cptDeb = compteDao.findById(numCptDeb).get();
+			cptDeb.setSolde(cptDeb.getSolde()-montant);
+			//compteDao.save(cptDeb); //utile seulement pour version sans @Transactional
+			
+			Compte cptCred = compteDao.findById(numCptCred).get();
+			cptCred.setSolde(cptCred.getSolde()+montant);
+			//compteDao.save(cptCred); //utile seulement pour version sans @Transactional
+		} catch (Exception e) {
+			throw new RuntimeException("echec transfert");
+		}
 	}
 
 }
