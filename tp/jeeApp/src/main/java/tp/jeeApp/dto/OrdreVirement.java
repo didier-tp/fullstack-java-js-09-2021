@@ -10,6 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 public class OrdreVirement {
 
+	//@Min
 	private Double montant;
 	private Long numCptDeb;
 	private Long numCptCred;

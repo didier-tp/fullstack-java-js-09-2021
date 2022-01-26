@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import tp.jeeApp.dto.CompteDto;
+import tp.jeeApp.dto.Erreur;
 import tp.jeeApp.dto.OrdreVirement;
 import tp.jeeApp.entity.Compte;
 import tp.jeeApp.exception.NotFoundException;
@@ -49,18 +52,21 @@ public class CompteRestCtrl {
 	
 	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte/1
 	@GetMapping(value="/{numCompte}" )
-	public Compte getCompteByNum(@PathVariable("numCompte") Long numCpt) {
+	public CompteDto getCompteByNum(@PathVariable("numCompte") Long numCpt) {
 	    Compte compte = compteService.rechercherCompteParNum(numCpt);
 		if(compte ==null) {
 			throw new NotFoundException("compte pas trouve pour numero="+numCpt);
 		}else
-			return compte;
+			return new CompteDto(compte.getNumero(),compte.getLabel(),compte.getSolde());
+		
 	}
 	
 	//RECHERCHE MULTIPLE :
 	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
 	//ou bien http://localhost:8080/jeeApp/bank-api/compte?numClient=1
 	@GetMapping(value="")
+	//valeur de retour idéale sur vrai projet (pas simple tp):
+	//List<CompteDto>
 	public List<Compte> getComptesByCriteria(
 			@RequestParam(value="numClient",required=false)	Long numClient) {
 	if(numClient==null)
@@ -69,11 +75,11 @@ public class CompteRestCtrl {
 		return  compteService.rechercherComptesDuClient(numClient);
 	}
 	
-	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
+	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte/virement
 	//avec dans la partie body de la requete :
 	// {  "montant" : 50 , "numCptDeb" : 1 , "numCptCred" : 2 }
-	@PostMapping(value="")
-	public ResponseEntity<OrdreVirement> postOrdreVirement(@RequestBody OrdreVirement ordreVirement) {
+	@PostMapping(value="virement")
+	public ResponseEntity<OrdreVirement> postOrdreVirement(@Validated @RequestBody  OrdreVirement ordreVirement) {
 		try {
 			compteService.transferer(ordreVirement.getMontant(), 
 					                 ordreVirement.getNumCptDeb(), 
@@ -85,5 +91,26 @@ public class CompteRestCtrl {
 			return new ResponseEntity<OrdreVirement>(ordreVirement,HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+	
+	//POST, URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
+	//avec dans la partie body de la requete :
+	// {  "label" : "compte Xy" , "solde" : 200.0 }
+	//ou bien {  "numero" : null, "label" : "compte Xy" , "solde" : 200.0 }
+	@PostMapping(value="")
+	public ResponseEntity<?> postCompte(@RequestBody  CompteDto compteDto) {
+			try {
+				Compte compte = new Compte(compteDto.getNumero(), 
+						compteDto.getLabel(),
+						compteDto.getSolde());
+				compte = compteService.sauvegarderCompte(compte);
+			    compteDto.setNumero(compte.getNumero()); 
+				return new ResponseEntity<CompteDto>(compteDto,HttpStatus.OK);
+			} catch (Exception e) {
+				return new ResponseEntity<Erreur>(
+						new Erreur("echec sauvegarde compte",e.getMessage()),
+						HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+		}
+
 
 }
