@@ -2,6 +2,8 @@ package tp.jeeApp.rest;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -113,7 +115,7 @@ public class CompteRestCtrl {
 	// {  "label" : "compte Xy" , "solde" : 200.0 }
 	//ou bien {  "numero" : null, "label" : "compte Xy" , "solde" : 200.0 }
 	@PostMapping(value="")
-	public ResponseEntity<?> postCompte(@RequestBody  CompteDto compteDto) {
+	public ResponseEntity<?> postCompte(@Valid @RequestBody  CompteDto compteDto) {
 			try {
 				Compte compte = new Compte(compteDto.getNumero(), 
 						compteDto.getLabel(),
