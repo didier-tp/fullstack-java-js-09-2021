@@ -69,6 +69,9 @@ public class CompteRestCtrl {
 		return  compteService.rechercherComptesDuClient(numClient);
 	}
 	
+	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
+	//avec dans la partie body de la requete :
+	// {  "montant" : 50 , "numCptDeb" : 1 , "numCptCred" : 2 }
 	@PostMapping(value="")
 	public ResponseEntity<OrdreVirement> postOrdreVirement(@RequestBody OrdreVirement ordreVirement) {
 		try {
