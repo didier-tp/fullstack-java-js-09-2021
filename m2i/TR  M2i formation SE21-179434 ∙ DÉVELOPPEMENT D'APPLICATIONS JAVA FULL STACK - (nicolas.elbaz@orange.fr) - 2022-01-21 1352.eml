@@ -1,0 +1,614 @@
+Return-Path: <nicolas.elbaz@orange.fr>
+Delivered-To: didier@d-defrance.fr
+X-Envelope-To: didier@d-defrance.fr
+Received: from smtp.smtpout.orange.fr (smtp07.smtpout.orange.fr [80.12.242.129])
+	by spool.mail.gandi.net (Postfix) with ESMTPS id 6A85478044A
+	for <didier@d-defrance.fr>; Fri, 21 Jan 2022 12:52:33 +0000 (UTC)
+Received: from LAPTOPFGOGQ925 ([86.247.69.142])
+	by smtp.orange.fr with ESMTPA
+	id AtP7nzjtxSDrIAtP7nD45S; Fri, 21 Jan 2022 13:52:33 +0100
+X-ME-Helo: LAPTOPFGOGQ925
+X-ME-Auth: ZiRjMzFlMTIyZWY2ZWFmNTlhNmQxYiQzYzVjOWVmNDUzMzJjMWQ1NzExNGQ2Nw==
+X-ME-Date: Fri, 21 Jan 2022 13:52:33 +0100
+X-ME-IP: 86.247.69.142
+From: <nicolas.elbaz@orange.fr>
+To: "'didier defrance'" <didier@d-defrance.fr>
+References: <PR1P264MB164639DD62C1E7DAA30C46F3A65B9@PR1P264MB1646.FRAP264.PROD.OUTLOOK.COM> <MR2P264MB00687ED4C046EE901C41730ABA5B9@MR2P264MB0068.FRAP264.PROD.OUTLOOK.COM>
+In-Reply-To: <MR2P264MB00687ED4C046EE901C41730ABA5B9@MR2P264MB0068.FRAP264.PROD.OUTLOOK.COM>
+Subject: =?utf-8?Q?TR:_M2i_formation_SE21-179434_=E2=88=99_?=
+	=?utf-8?Q?D=C3=89VELOPPEMENT_D'APPLICATIONS_JAV?=
+	=?utf-8?Q?A_FULL_STACK?=
+Date: Fri, 21 Jan 2022 13:52:30 +0100
+Message-ID: <12ff201d80ec5$c0b5dd80$42219880$@orange.fr>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_12FF3_01D80ECE.227CB680"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQIWaiF8hAlpSW0Kdz5QayQ32d/94wJ604Otq9zgZEA=
+Content-Language: fr
+X-GND-Status: LEGIT
+Received-SPF: 
+Authentication-Results: spool.mail.gandi.net;
+	dkim=none;
+	spf=none (spool.mail.gandi.net: domain of nicolas.elbaz@orange.fr has no SPF policy when checking 80.12.242.129) smtp.mailfrom=nicolas.elbaz@orange.fr;
+	dmarc=none
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_12FF3_01D80ECE.227CB680
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_12FF4_01D80ECE.227CB680"
+
+
+------=_NextPart_001_12FF4_01D80ECE.227CB680
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Didier=20
+
+=20
+
+Voici les acc=C3=A8s des machines pour les stagiaires
+
+=20
+
+De : Axel GOUPY <a.goupy@m2iformation.fr =
+<mailto:a.goupy@m2iformation.fr> >=20
+Envoy=C3=A9 : vendredi 21 janvier 2022 12:11
+=C3=80 : didier@d-defrance.fr <mailto:didier@d-defrance.fr>=20
+Cc : Arnaud GONCALVES <a.goncalves@m2iformation.fr =
+<mailto:a.goncalves@m2iformation.fr> >; Brice THOMAS =
+<b.thomas@m2iformation.fr <mailto:b.thomas@m2iformation.fr> >
+Objet : M2i formation SE21-179434 =E2=88=99 D=C3=89VELOPPEMENT =
+D'APPLICATIONS JAVA FULL STACK
+
+=20
+
+Bonjour,
+
+=20
+
+Vous animez une formation pour M2i prochainement.
+
+=20
+
+Il est possible que certains stagiaires ne disposent pas de =
+mat=C3=A9riel ou logiciel n=C3=A9cessaire pour suivre la formation dans =
+de bonnes conditions.
+
+=20
+
+Si c=E2=80=99est le cas voici des identifiants et mots de passe pour =
+acc=C3=A9der =C3=A0 des machines M2i :
+
+=20
+
+
+david.napierala
+
+g2kT3qaF
+
+SE21-179434
+
+
+abdelmoutaleb.elbouazzati
+
+e2Lse3v6
+
+SE21-179434
+
+
+alain.quivigier
+
+KkZdDpxJ
+
+SE21-179434
+
+
+philippe.lecocq
+
+G2uV1V6y
+
+SE21-179434
+
+
+formateur.se21179434
+
+bAP4f0J5
+
+SE21-179434
+
+=20
+
+Il est possible que la liste des stagiaires que je dispose ne soit pas a =
+jour, elle est donc non exhaustive.
+
+=20
+
+Voici =C3=A9galement une proc=C3=A9dure d=E2=80=99acc=C3=A8s au machines =
+M2i :
+
+=20
+
+1. Lancer un navigateur.
+
+2- Copier/coller l=E2=80=99adresse suivante dans la barre =
+d=E2=80=99adresse : https://rdppicpus.m2iformation.info/#/
+
+=20
+
+3-l=E2=80=99=C3=A9cran ci-apr=C3=A8s doit apparaitre=20
+
+=20
+
+=20
+
+Si l=E2=80=99image ci-dessus est apparue, la prise en main =C3=A0 =
+distance est possible avec l=E2=80=99environnement de travail. =
+C=E2=80=99est parfait !.
+
+=20
+
+Merci =C3=A0 vous,
+
+Bonne fin de journ=C3=A9e,
+
+Bien cordialement,=20
+
+
+
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3A4PQ>=20
+
+
+Axel Goupy
+Technicien Installateur
+146-148 rue de Picpus - 75012 Paris
+01 44 53 36 07
+a.goupy@m2iformation.fr <mailto:a.goupy@m2iformation.fr>=20
+
+
+
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3A4PQ>=20
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pzPQ>=20
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1prPQ>=20
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pnPQ>=20
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pRPQ>=20
+
+	=09
+
+ <https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3B3PQ-K1p5TnlRPT0> =
+
+
+Les informations figurant sur le pr=C3=A9sent mail sont exclusivement =
+destin=C3=A9es au traitement des activit=C3=A9s de formation et le cas =
+=C3=A9ch=C3=A9ant en vue de l=E2=80=99envoi d=E2=80=99informations et/ou =
+de newsletter.
+La politique de confidentialit=C3=A9 des donn=C3=A9es personnelles est =
+consultable sur le site  <http://www.m2iformation.fr/mentions-legales> =
+www.m2iformation.fr/mentions-legales
+Toute demande de modification ou suppression des donn=C3=A9es =
+personnelles doit =C3=AAtre effectu=C3=A9e aupr=C3=A8s de M2i, Service =
+Juridique 146/148 rue de Picpus, 75012 Paris ou  =
+<mailto:juridiquem2i@m2iformation.fr> juridiquem2i@m2iformation.fr
+
+=20
+
+
+------=_NextPart_001_12FF4_01D80ECE.227CB680
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)"><!--[if =
+!mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.xxxxmsonormal, li.xxxxmsonormal, div.xxxxmsonormal
+	{mso-style-name:x_x_x_xmsonormal;
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.xxxxxmsonormal, li.xxxxxmsonormal, div.xxxxxmsonormal
+	{mso-style-name:x_x_x_xxmsonormal;
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle25
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DFR =
+link=3D"#0563C1" vlink=3D"#954F72" style=3D'word-wrap:break-word'><div =
+class=3DWordSection1><p class=3DMsoNormal>Bonjour Didier =
+<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Voici les acc=C3=A8s des machines pour les =
+stagiaires<o:p></o:p></p><div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm'><p class=3DMsoNormal><b><span =
+style=3D'mso-fareast-language:FR'>De&nbsp;:</span></b><span =
+style=3D'mso-fareast-language:FR'> Axel GOUPY &lt;<a =
+href=3D"mailto:a.goupy@m2iformation.fr">a.goupy@m2iformation.fr</a>&gt; =
+<br><b>Envoy=C3=A9&nbsp;:</b> vendredi 21 janvier 2022 =
+12:11<br><b>=C3=80&nbsp;:</b> <a =
+href=3D"mailto:didier@d-defrance.fr">didier@d-defrance.fr</a><br><b>Cc&nb=
+sp;:</b> Arnaud GONCALVES &lt;<a =
+href=3D"mailto:a.goncalves@m2iformation.fr">a.goncalves@m2iformation.fr</=
+a>&gt;; Brice THOMAS &lt;<a =
+href=3D"mailto:b.thomas@m2iformation.fr">b.thomas@m2iformation.fr</a>&gt;=
+<br><b>Objet&nbsp;:</b> M2i formation SE21-179434 =E2=88=99 =
+D=C3=89VELOPPEMENT D'APPLICATIONS JAVA FULL =
+STACK<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Bonjour,<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Vous animez =
+une formation pour M2i prochainement.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Il est =
+possible que certains stagiaires ne disposent pas de mat=C3=A9riel ou =
+logiciel n=C3=A9cessaire pour suivre la formation dans de bonnes =
+conditions.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Si c=E2=80=99est le cas voici des identifiants et mots =
+de passe pour acc=C3=A9der =C3=A0 des machines =
+M2i&nbsp;:<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D497 =
+style=3D'width:372.4pt;border-collapse:collapse'><tr =
+style=3D'height:16.5pt'><td width=3D164 nowrap valign=3Dbottom =
+style=3D'width:122.8pt;border-top:solid #8EA9DB =
+1.0pt;border-left:none;border-bottom:solid #8EA9DB =
+1.0pt;border-right:none;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>david.napierala<o:p></o:p><=
+/span></p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border-top:solid #8EA9DB =
+1.0pt;border-left:none;border-bottom:solid #8EA9DB =
+1.0pt;border-right:none;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>g2kT3qaF<o:p></o:p></span><=
+/p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border-top:solid #8EA9DB =
+1.0pt;border-left:none;border-bottom:solid #8EA9DB =
+1.0pt;border-right:none;background:yellow;padding:0cm 3.5pt 0cm =
+3.5pt;height:16.5pt'><p class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>SE21-179434<o:p></o:p></spa=
+n></p></td></tr><tr style=3D'height:16.5pt'><td width=3D164 nowrap =
+valign=3Dbottom style=3D'width:122.8pt;border:none;border-bottom:solid =
+#8EA9DB 1.0pt;background:#D9E1F2;padding:0cm 3.5pt 0cm =
+3.5pt;height:16.5pt'><p class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>abdelmoutaleb.elbouazzati<o=
+:p></o:p></span></p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:#D9E1F2;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>e2Lse3v6<o:p></o:p></span><=
+/p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:yellow;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>SE21-179434<o:p></o:p></spa=
+n></p></td></tr><tr style=3D'height:16.5pt'><td width=3D164 nowrap =
+valign=3Dbottom style=3D'width:122.8pt;border:none;border-bottom:solid =
+#8EA9DB 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>alain.quivigier<o:p></o:p><=
+/span></p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>KkZdDpxJ<o:p></o:p></span><=
+/p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:yellow;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>SE21-179434<o:p></o:p></spa=
+n></p></td></tr><tr style=3D'height:16.5pt'><td width=3D164 nowrap =
+valign=3Dbottom style=3D'width:122.8pt;border:none;border-bottom:solid =
+#8EA9DB 1.0pt;background:#D9E1F2;padding:0cm 3.5pt 0cm =
+3.5pt;height:16.5pt'><p class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>philippe.lecocq<o:p></o:p><=
+/span></p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:#D9E1F2;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>G2uV1V6y<o:p></o:p></span><=
+/p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:yellow;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>SE21-179434<o:p></o:p></spa=
+n></p></td></tr><tr style=3D'height:16.5pt'><td width=3D164 nowrap =
+valign=3Dbottom style=3D'width:122.8pt;border:none;border-bottom:solid =
+#8EA9DB 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>formateur.se21179434<o:p></=
+o:p></span></p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>bAP4f0J5<o:p></o:p></span><=
+/p></td><td width=3D166 nowrap valign=3Dbottom =
+style=3D'width:124.8pt;border:none;border-bottom:solid #8EA9DB =
+1.0pt;background:yellow;padding:0cm 3.5pt 0cm 3.5pt;height:16.5pt'><p =
+class=3DMsoNormal><span =
+style=3D'color:black;mso-fareast-language:FR'>SE21-179434<o:p></o:p></spa=
+n></p></td></tr></table><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Il est possible que la liste des stagiaires que je =
+dispose ne soit pas a jour, elle est donc non =
+exhaustive.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3Dxxxxmsonormal>Voici =C3=A9galement une proc=C3=A9dure =
+d=E2=80=99acc=C3=A8s au machines M2i&nbsp;:<o:p></o:p></p><p =
+class=3Dxxxxmsonormal>&nbsp;<o:p></o:p></p><p class=3Dxxxxxmsonormal>1. =
+Lancer un navigateur.<o:p></o:p></p><p>2- Copier/coller =
+l=E2=80=99adresse suivante dans la barre d=E2=80=99adresse : <span =
+style=3D'font-size:10.5pt;font-family:"Segoe UI",sans-serif'><a =
+href=3D"https://rdppicpus.m2iformation.info/#/" target=3D"_blank" =
+title=3D"https://rdppicpus.m2iformation.info/#/">https://rdppicpus.m2ifor=
+mation.info/#/</a></span><o:p></o:p></p><p class=3Dxxxxxmsonormal =
+style=3D'margin-left:35.4pt'>&nbsp;<o:p></o:p></p><p =
+class=3Dxxxxxmsonormal>3-<span =
+style=3D'font-size:12.0pt'>l=E2=80=99=C3=A9cran ci-apr=C3=A8s doit =
+apparaitre </span><o:p></o:p></p><p class=3Dxxxxxmsonormal>&nbsp;<img =
+border=3D0 width=3D132 height=3D119 =
+style=3D'width:1.375in;height:1.2395in' id=3D"x_x_x_x_x_Image_x0020_34" =
+src=3D"cid:image001.jpg@01D80E0C.5D71B8C0"><o:p></o:p></p><p =
+class=3Dxxxxxmsonormal>&nbsp;<o:p></o:p></p><p class=3Dxxxxxmsonormal>Si =
+l=E2=80=99image ci-dessus est apparue, la prise en main =C3=A0 distance =
+est possible avec l=E2=80=99environnement de travail. C=E2=80=99est =
+parfait&nbsp;!.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Merci =C3=A0 =
+vous,<o:p></o:p></p><p class=3DMsoNormal>Bonne fin de =
+journ=C3=A9e,<o:p></o:p></p><p class=3DMsoNormal>Bien =
+cordialement,&nbsp;<o:p></o:p></p><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0 =
+style=3D'display:inline-table'><tr style=3D'color:inherit'><td =
+style=3D'padding:.75pt .75pt .75pt .75pt;color:inherit'><table =
+class=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0 =
+width=3D"100%" style=3D'width:100.0%;color:inherit'><tr =
+style=3D'color:inherit'><td style=3D'padding:.75pt .75pt .75pt =
+.75pt;color:inherit'><table class=3DMsoNormalTable border=3D0 =
+cellspacing=3D0 cellpadding=3D0 width=3D"100%" =
+style=3D'width:100.0%;color:inherit'><tr =
+style=3D'height:45.0pt;color:inherit'><td style=3D'padding:.75pt .75pt =
+.75pt .75pt;height:45.0pt;color:inherit'><div id=3Dlogo><p =
+class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3A4PQ" =
+target=3D"_blank"><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:blue;text-=
+decoration:none'><img border=3D0 width=3D59 height=3D60 =
+style=3D'width:.6145in;height:.625in' id=3D"_x0000_i1031" =
+src=3D"https://signitic.m2iformation.fr/uploads/07d32fdb0565ef275b1052ac0=
+9646277.png" alt=3Dimg></span></a><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:black'><o:=
+p></o:p></span></p></div></td></tr></table></td></tr><tr =
+style=3D'color:inherit'><td style=3D'padding:7.5pt 0cm 7.5pt =
+0cm;color:inherit;border-width:initial;border-style:initial'><div><p =
+style=3D'margin:0cm'><strong><span =
+style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#060E40;ms=
+o-fareast-language:EN-US'>Axel Goupy</span></strong><b><span =
+style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#E2001A;ms=
+o-fareast-language:EN-US'><br></span></b><strong><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:#7E8C8D;ms=
+o-fareast-language:EN-US'>Technicien =
+Installateur</span></strong><b><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:#7E8C8D;ms=
+o-fareast-language:EN-US'><br></span></b><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:#7E8C8D;ms=
+o-fareast-language:EN-US'>146-148 rue de Picpus - 75012 Paris<br>01 44 =
+53 36 07<br><a =
+href=3D"mailto:a.goupy@m2iformation.fr">a.goupy@m2iformation.fr</a></span=
+><span =
+style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:black;mso-=
+fareast-language:EN-US'><o:p></o:p></span></p></div></td></tr><tr =
+style=3D'color:inherit'><td style=3D'border-top:solid #E2001A =
+1.0pt;border-left:none;border-bottom:solid #E2001A =
+1.0pt;border-right:none;padding:7.5pt 0cm 7.5pt =
+0cm;color:inherit'><table class=3DMsoNormalTable border=3D0 =
+cellspacing=3D0 cellpadding=3D0 width=3D"100%" =
+style=3D'width:100.0%;text-align:inherit'><tr =
+style=3D'height:11.25pt;color:inherit'><td width=3D176 =
+style=3D'width:132.0pt;padding:.75pt .75pt .75pt =
+.75pt;height:11.25pt;text-align:inherit'><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0 =
+style=3D'border-collapse:collapse;color:inherit'><tr =
+style=3D'height:22.5pt;text-align:inherit'><td width=3D35 valign=3Dtop =
+style=3D'width:26.25pt;padding:0cm 0cm 0cm =
+0cm;height:22.5pt;color:inherit'><p class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3A4PQ"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D30 =
+height=3D30 style=3D'width:.3125in;height:.3125in' id=3D"_x0000_i1030" =
+src=3D"https://signitic.m2iformation.fr/uploads/ffffff060e40_rond_web.png=
+" alt=3Dimg></span></a><o:p></o:p></p></td><td width=3D35 valign=3Dtop =
+style=3D'width:26.25pt;padding:0cm 0cm 0cm =
+0cm;height:22.5pt;text-align:inherit'><p class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pzPQ"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D30 =
+height=3D30 style=3D'width:.3125in;height:.3125in' id=3D"_x0000_i1029" =
+src=3D"https://signitic.m2iformation.fr/uploads/ffffff060e40_rond_linkedi=
+n.png" alt=3Dimg></span></a><o:p></o:p></p></td><td width=3D35 =
+valign=3Dtop style=3D'width:26.25pt;padding:0cm 0cm 0cm =
+0cm;height:22.5pt;text-align:inherit'><p class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1prPQ"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D30 =
+height=3D30 style=3D'width:.3125in;height:.3125in' id=3D"_x0000_i1028" =
+src=3D"https://signitic.m2iformation.fr/uploads/ffffff060e40_rond_faceboo=
+k.png" alt=3Dimg></span></a><o:p></o:p></p></td><td width=3D35 =
+valign=3Dtop style=3D'width:26.25pt;padding:0cm 0cm 0cm =
+0cm;height:22.5pt;text-align:inherit'><p class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pnPQ"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D30 =
+height=3D30 style=3D'width:.3125in;height:.3125in' id=3D"_x0000_i1027" =
+src=3D"https://signitic.m2iformation.fr/uploads/ffffff060e40_rond_twitter=
+.png" alt=3Dimg></span></a><o:p></o:p></p></td><td width=3D35 =
+valign=3Dtop style=3D'width:26.25pt;padding:0cm 0cm 0cm =
+0cm;height:22.5pt;text-align:inherit'><p class=3DMsoNormal><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L1pRPQ"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D30 =
+height=3D30 style=3D'width:.3125in;height:.3125in' id=3D"_x0000_i1026" =
+src=3D"https://signitic.m2iformation.fr/uploads/ffffff060e40_rond_youtube=
+.png" alt=3Dimg></span></a><o:p></o:p></p></td></tr></table></td><td =
+width=3D178 style=3D'width:133.5pt;padding:0cm 0cm 0cm =
+3.75pt;height:11.25pt;color:inherit'></td><td width=3D16 =
+style=3D'width:12.0pt;padding:.75pt .75pt .75pt =
+0cm;height:11.25pt;color:inherit'><div><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0><tr><td style=3D'padding:0cm =
+0cm 0cm =
+0cm'></td></tr></table></div></td></tr></table></td></tr></table></td></t=
+r></table><p style=3D'margin-top:7.5pt'><a =
+href=3D"https://signitic.m2iformation.fr/linkc/L1oySXlwYUI-L3B3PQ-K1p5Tnl=
+RPT0" target=3D"_blank"><span =
+style=3D'color:blue;text-decoration:none'><img border=3D0 width=3D500 =
+height=3D150 style=3D'width:5.2083in;height:1.5625in' =
+id=3D"_x0000_i1025" =
+src=3D"https://signitic.m2iformation.fr/uploads/c116681e083dd2caa46895c23=
+08e1a2b.png" alt=3Dimg></span></a><o:p></o:p></p><p =
+class=3DMsoNormal><em><span =
+style=3D'font-size:6.0pt;font-family:"Arial",sans-serif;color:#878A87'>Le=
+s informations figurant sur le pr=C3=A9sent mail sont exclusivement =
+destin=C3=A9es au traitement des activit=C3=A9s de formation et le cas =
+=C3=A9ch=C3=A9ant en vue de l=E2=80=99envoi d=E2=80=99informations et/ou =
+de newsletter.</span></em><i><span =
+style=3D'font-size:6.0pt;font-family:"Arial",sans-serif;color:#878A87'><b=
+r><em><span style=3D'font-family:"Arial",sans-serif'>La politique de =
+confidentialit=C3=A9 des donn=C3=A9es personnelles est consultable sur =
+le site&nbsp;</span></em></span></i><a =
+href=3D"http://www.m2iformation.fr/mentions-legales"><i><span =
+style=3D'font-size:6.0pt;font-family:"Arial",sans-serif'>www.m2iformation=
+.fr/mentions-legales</span></i></a><i><span =
+style=3D'font-size:6.0pt;font-family:"Arial",sans-serif;color:#878A87'><b=
+r><em><span style=3D'font-family:"Arial",sans-serif'>Toute demande de =
+modification ou suppression des donn=C3=A9es personnelles doit =C3=AAtre =
+effectu=C3=A9e aupr=C3=A8s de M2i, Service Juridique 146/148 rue de =
+Picpus, 75012 Paris ou&nbsp;</span></em></span></i><a =
+href=3D"mailto:juridiquem2i@m2iformation.fr"><i><span =
+style=3D'font-size:6.0pt;font-family:"Arial",sans-serif'>juridiquem2i@m2i=
+formation.fr</span></i></a><o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></div></body></html>
+------=_NextPart_001_12FF4_01D80ECE.227CB680--
+
+------=_NextPart_000_12FF3_01D80ECE.227CB680
+Content-Type: image/jpeg;
+	name="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.jpg@01D80E0C.5D71B8C0>
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAB3AIQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDvPDXh
+rRZ/C+kyy6Ppzu9lCzO1qhLEoMknFaZ8LaCOmiaX/wCAkf8AhS+Ff+RR0b/rxg/9FrWoaAMKTRPC
+8TlJNM0ZWHUNbxAj9KT+yPCv/QO0T/vxF/hXmXi1f+Kq1DPP7z+lY+BXHLFWdrHv0skVSnGfPv5H
+sv8AZHhT/oHaJ/4Dxf4Uf2R4U/6B2if+A8X+FeNYoxS+tvsaf2B/f/A9l/sjwp/0DtE/8B4v8KP7
+I8Kf9A7RP/AeL/CvGsUbckDByelH1vyD+wF/z8/A9l/sjwr/ANA/RP8AvxF/hR/ZHhX/AKB+if8A
+fiL/AAryK6066sZEjurd4nkAKBv4qLzT7nT5VjvIHhdl3AN3FP61LsSskg7Wqbnrv9keFf8AoH6J
+/wCA8X+FH9keFP8AoHaJ/wCA8X+FeNYHp+tGBS+tvsV/YC/n/A9l/sfwp/0DtE/78Rf4U6PRPC8r
+hI9M0ZmPRVt4iT+leMYFbvgsD/hLrD6n+VOOK5mlYzrZJ7OnKfPsux6iPC2gH/mB6Z/4CR/4Uv8A
+wiugf9ATTP8AwEj/AMK1AKdXYeAeF/FnTbHT/FNtFZ2dtbxmyVikUKqCd784A68CirPxm/5G+1/6
+8U/9GSUUAeq+Ff8AkUdG/wCvGD/0WtahrL8K/wDIo6N/14wf+i1rUNAHivi7/ka9Q/66f0rHrZ8W
+qx8VagQr48z+6fSsfY/91/8Avk15M0+Zn3mEkvYQ16CUUux/7r/98mjY/wDcf/vk1NmdPMu51Hgn
+R7HUzfTX8HnLbpuVc4FaI07QI/C6at/Zkh8+ULs805TJxwa5zRLsWUV0r3d1bGYBMRpkEHqTVktb
+fYksG1m5NrG29VEBwDXTBpRtY8TE05yrN87Suu+xs6vFZ6Xr1qNYt5b1JkCwjf8A6vniqfxEtktt
+Zt/LLkND/ExOKrXf2K/dJLzW7iaeMAI5hOFH0rP1qdruaORr6a+cLt3NEV2iibbi1YMNTtVhJvZa
+7/gZdFLsf+4//fJo2P8A3X/75Nc1me3zLuJW54L/AORusP8Aeb+VYmx/7r/98mtzwYrDxbYHa33j
+1U+lXTT50c2LkvYT16M9mFLTVp1eqfBninxm/wCRvtf+vFP/AEZJRR8Zv+Rvtf8ArxT/ANGSUUAe
+q+Ff+RR0b/rxg/8ARYrUOPWuZttSfR/hnZ6hGiyPbaXFIEbocRisdPH96+j313HbWk7Wwh2yxMwj
+LSEAoc85XNAHdGGJjlo0J9Soo8iH/nnH/wB8iuN1rxnqHh+O7hvbW1e8it1uImjZvLZSwU7h1BGa
+09A8RXOqR6gZ4I9toAUuId3lTZXJA3c8UWQczN/yIf8AnnH/AN8ijyIf+eUf/fIrjbD4hedoLTXV
+kY9WIzDZKc+fn7rKfT1Pany+LtUHh+w1RLK12zxqxiMhLySE48tAOp9zSsh3Z1xt4T/yzj/75FH2
+eL/nlH/3yKxtL1+a/vNbge3WMacyqgB5bKbufx4rBsPHl1caKmoSQ2zyTyJDFBGHXbIzYG5jxjHc
+UWDmfc7f7PF/zyj/AO+RQIIf+eUf/fIrktX8Xaj4fF1Bf2trJdLam6gaJm2MAQCGB5HXr3qqfHd+
+dIvLq3sra7lglhijaJmEcrPjKc8hhmiwXfc7jyIf+eUY/wCAijyIf+ecf/fIrkdS8fxxw2X9mW32
+iaWVFuUc4+yqW2nd/tZ4AqWTxoT4rfSYUt/s+42yTtJ832jbu2lf7vbPrRZBdnU+RD/zyj/75FCw
+xKQwRFI6EACuK/4TDV4dL1i9uLaxI064+y7Iy3ztkDOew5q5/wAJPqV1b6je6faWrWenOyOJpCry
+lRlsdh7Z60wu+51owKXOa4mL4gxteTrNaGGxMCSQXLfd3sm4I/8Adz2NdPoeoNqmiWd7Igja4jDl
+QeBmgR5J8Zv+Rvtf+vFP/RklFHxm/wCRvtf+vFP/AEZJRQB6bolhBqfgPTLO7TfBNp0KSLnGR5a0
++58I6PdpOslt8txGkcoVyAwT7pOO4x1pPCwQeD9GZzjNjAM5/wBha1B5JZl3cqBn5ulAGWfB2jta
+zwS27Si42iR5JGZ2CnIG4nOMjpWu0EbQmIqNhUqVHpTWEKAlmAA65bpUZltgwXfyegBoAhg0DTba
+K3SO0j/0aMxQsRlkQ9QD1qjJ4K0eR7VxFNG1onlweXMy7Fznjn9a2dkXr/49QqxOWCnJXggN0oAr
+W2jWVpJeSQxYe9IM5LE7yBj+VMXw/pq6Kmkm2VrJF2rGxzjnPX1q95Keh/OjyU9D+dAGQvhDSPs9
+xE8Dy/aE8uR5ZGZyn93cTkCnyeFtKllkdrbBlaNnAYgMyfdOPUetafkp6H86PIT0P50AUrjw/pty
+swe0jBmlWaUoNpd16MSOuKg/4RLRvsn2f7FHt83zt/8AHv3bt27rnNankp6H86XyU9D+dAGbJ4Z0
+uWzvLV7fMN7L5067j878c/oKjufCWk3dw8ssDDzceaiSMqS46blBwa1vJT0P50eSnofzoAoP4d0y
+VL1JLSNo71VSdD91gBgcduPSrdlZQafZQ2lqmyCFQka5zgDoKk8lPQ/nTJUCJuXIII5zQB438Zv+
+Rvtf+vFP/RklFJ8Zv+RutP8ArxT/ANGSUUAem+G0WbwXoqM+3FlAeP8AcFW206NxgzA4Ix/9f1ql
+4Xkc+E9HwEx9hh6j/YFavmSekf5U7MVyF9PhZWG8fMT/AJ/Sl+wQ7i3mDJ9hxzmpd8npH+VG+T0j
+/KjlYXIP7PjMhd5t2TkjtVi1hS2L4cENg+9J5knpH+VHmSekf5UcrC6LXmJ/eH50b0/vD86qeZJ6
+R/lR5knon5U+VhdFven94fnRvT+8Pzqp5knon5UeZJ6J+VHKwui3vT+8Pzo3p/eH51U8yT0T8qPM
+k9E/KjlYXRb3p/eH50b0/vD86qeZJ6J+VHmSeiflRysLoteYn94fnUczq0ZCsCSRwKi8yT0j/Kk8
+10wxVCM44FHKwueQfGb/AJG60/68U/8ARklFHxm/5G60/wCvFP8A0ZJRUjPSvC2f+EQ0fHB+ww4/
+74FV4NL1+NLMTa8khjuGec/Zx+9jP3U9sVe8L2yt4S0c7mGbGDjP/TMVqfZR/ff86q9ybHOxaX4g
+VIBJryMUu2lkP2cfPCekf/16RNK18BN2vqcXfmt/o45h7R//AF66P7Kv/PR/zo+yj/no/wCdF0Fj
+nTpevlGA15Qftnmg/Zx/qf8Ann/9er2m2uoW0t42oX4u0ll3wKIwvkp/d961Psi/33/Oj7KP77/n
+RdBykVFS/ZR/z0f86Pso/wCej/nVcyDlIqKl+yj/AJ6P+dH2Uf8APR/zo5kHKRUVL9lH/PR/zo+y
+j/no/wCdHMg5SKipfso/56P+dH2Uf89H/OjmQcpFTZPuD6j+dT/ZR/ff86X7KvGWYgHOCaXMgseN
+fGb/AJG60/68U/8ARklFL8Zv+Rutf+vFP/RklFQUVNM+JXiC00u0t4XtRFDCkaAxZOAoAq1/wtLx
+J/z0tf8AvzXFWv8Ax6xf7i/yFS0Adh/wtLxJ/wA9LX/vzR/wtLxJ/wA9LX/vzXH0UAdefin4kH/L
+S1/780f8LT8Sf89LT/vzWT4Y1G202/lkunjWOSPYSyEsBn+EjoaualeeG5dFmSzgkN82SHlB8wtu
+4bPTGKALX/C0/Eg/5a2n/fmj/hafiP8A562n/fmqsN14dAtd0cQVYCGV4WLLNj7znPzLntUv9oeG
+FcqtmjLJJiRjGfu7OSg7fN2oAl/4Wn4j5/e2nH/TGj/hafiP/nraf9+abHf+E2lUTWf7uMoUZIyC
+3y/Nu9Rmo5r7w4DK9nBDHKJFb95EzoyjqFH8JzQBN/wtPxH/AM9bT/vzR/wtPxH/AM9bT/vzTrnV
+fC9xPfzTW6SSzSFoyIigCbRgD0IOfrXO63c2dxqbnTYY4rRABGFXaTxyT6nNIDof+FpeJP8Anpa/
+9+aP+FpeJP8Anpa/9+a4+imB2H/C0vEn/PS1/wC/NWdM+JniC51azgme1Mcsyo4EWOCcGuGq5ov/
+ACHtO/6+Y/50AdL8Zv8AkbrX/rxT/wBGSUUfGb/kb7X/AK8U/wDRklFAGXp7eAxptr9r1TUkuPJT
+zVWIkK+0ZA46Zqxu+Hn/AEF9U/78n/CiigA3fDz/AKC+qf8Afk/4Ubvh5/0F9U/78n/CiigA3fDz
+/oL6p/35P+FG74d/9BjVP+/J/wAKKKADf8PP+gxqn/fk/wCFG74ef9BjVP8Avyf8KKKADd8Oz/zG
+NU/78n/Cjf8ADz/oMap/35P+FFFAC7/h5/0GNU/78t/hSbvh5/0GNU/78n/CiigA3fDz/oMap/35
+P+FKv/Cu2Gf7Y1MfWFv8KKKAELfDsf8AMY1T/vy3+FTWd38PbO9guV1bU2aGQSAGFsEj8KKKAMv4
+k+LdK8ReIbe706aR4ktVjJaMr8wdz3+oooooA//Z
+
+------=_NextPart_000_12FF3_01D80ECE.227CB680--
+
