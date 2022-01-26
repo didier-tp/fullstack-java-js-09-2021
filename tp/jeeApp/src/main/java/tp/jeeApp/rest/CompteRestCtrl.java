@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -60,6 +61,21 @@ public class CompteRestCtrl {
 			return new CompteDto(compte.getNumero(),compte.getLabel(),compte.getSolde());
 		
 	}
+	
+	//DELETE , URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte/4
+	@DeleteMapping(value="/{numCompte}" )
+	public ResponseEntity<?> deleteCompteByNum(@PathVariable("numCompte") Long numCpt) {
+		    try {
+				compteService.supprimerCompte(numCpt);
+				return new ResponseEntity<String>(HttpStatus.NO_CONTENT);//204 (suppression réussie)
+			} catch (Exception e) {
+				return new ResponseEntity<Erreur>(
+						new Erreur("echec suppression", "compte num="+numCpt),
+						HttpStatus.NOT_FOUND);//ou INTERNAL_SERVER_ERROR
+			}
+			
+			
+		}
 	
 	//RECHERCHE MULTIPLE :
 	//URL de déclenchement: http://localhost:8080/jeeApp/bank-api/compte
