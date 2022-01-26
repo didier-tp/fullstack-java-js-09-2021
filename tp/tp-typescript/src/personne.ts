@@ -1,4 +1,19 @@
-class Personne{
+export class Personne{
+
+    adresse : string = "1 rue Elle 75001 Par ici";
+
+    constructor(public prenom:string="?" ,
+                public nom:string="?",
+                public age:number=0 ){
+    }
+
+    fullName() : string {
+      return this.prenom + " " + this.nom;
+    }
+}
+
+/*
+export class Personne{
     prenom :string ;
     nom :string ;
     age :number;
@@ -11,8 +26,6 @@ class Personne{
       return this.prenom + " " + this.nom;
     }
 }
+*/
 
-let p : Personne;
-p = new Personne("didier","Defrance",52);
-console.log(p.fullName());
-console.log(JSON.stringify(p));
+
