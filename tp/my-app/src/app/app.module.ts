@@ -14,6 +14,7 @@ import { ZzComponent } from './basic/zz/zz.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TogglePanelComponent } from './toggle-panel/toggle-panel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     XyComponent,
     ZzComponent,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    TogglePanelComponent
   ],
   imports: [
     BrowserModule,

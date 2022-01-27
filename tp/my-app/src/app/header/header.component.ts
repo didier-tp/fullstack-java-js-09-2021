@@ -10,9 +10,13 @@ export class HeaderComponent implements OnInit {
   @Input()
   titre :string = "titre_header"; //valeur par défaut
 
-  constructor() { }
+  constructor() { 
+    console.log("dans constructor, titre="+this.titre);
+  }
 
   ngOnInit(): void {
+    //ressemble a @PostConstruct de java
+    console.log("dans ngOnInit, titre="+this.titre);
   }
 
 }
