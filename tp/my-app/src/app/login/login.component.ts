@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Login } from '../common/data/login';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  public login : Login = new Login();
+  public message :string ="";
+  public onLogin(){
+     this.message = "donnees saisies = " + JSON.stringify(this.login);
+  }
 
   constructor() { }
 
