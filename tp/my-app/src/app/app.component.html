@@ -1,7 +1,11 @@
 <div class="container-fluid">
+    <!--
      <app-header></app-header>
-     welcome to {{title}}
-
+     <app-header titre="monAppliAngular"></app-header>
+     <app-header [titre]="'monAppliAngular'"></app-header>
+     --> 
+     <app-header [titre]="title"></app-header>
+    
      <!-- sera automatiquement remplacé par le composant 
           associé à la route/pseudo-url courante-->
      <router-outlet></router-outlet>
