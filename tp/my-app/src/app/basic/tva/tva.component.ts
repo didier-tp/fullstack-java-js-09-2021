@@ -15,6 +15,7 @@ export class TvaComponent implements OnInit {
   
   onCalculerTvaEtTtc(){
      this.tva = this.ht * this.taux / 100;
+     //console.log("tva="+this.tva);
      this.ttc = this.tva + this.ht;
   }
 

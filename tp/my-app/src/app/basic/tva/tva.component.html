@@ -1,9 +1,9 @@
 <h3>calcul tva</h3>
 <label>ht:</label> <input type="number" [(ngModel)]="ht" 
-                          (input)="onCalculerTvaEtTtc()"/><br/>
+                          (input)="onCalculerTvaEtTtc()" /><br/>
 <label>taux:</label> <select [(ngModel)]="taux" 
                         (change)="onCalculerTvaEtTtc()">
-                        <option *ngFor="let t of listeTaux">{{t}}</option>
+                             <option *ngFor="let t of listeTaux">{{t}}</option>
                       </select><br/>
 <label>tva:</label> {{tva}}   <br/>  
 <label>ttc:</label> {{ttc}}   <br/>                
