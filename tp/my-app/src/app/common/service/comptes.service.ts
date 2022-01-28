@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ComptesService {
 
-  baseUrl = "http://localhost:8080/jeeApp/bank-api/comptes";
+  baseUrl = "http://localhost:8080/jeeApp/bank-api/compte";
 
   constructor(private http : HttpClient) { }
 
