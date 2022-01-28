@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {  Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { delay, map, tap } from 'rxjs/operators';
 import { Compte } from '../data/compte';
 import { HttpClient } from '@angular/common/http';
 import { OrdreVirement } from '../data/ordreVirement';
@@ -19,6 +19,15 @@ export class ComptesService {
   rechercherComptesDuClient$(numClient :number) :Observable<Compte[]> {
     let url = this.baseUrl + `?numClient=${numClient}`;
     return this.http.get<Compte[]>(url);
+    /*
+    return this.http.get<Compte[] >(url , {observe: 'response'})
+    .pipe(
+      tap(
+        response => { console.log("status=" + response.status + " date="  +response.headers.get('date'));} 
+      ),
+      map( (response)  => response.body?response.body:[])
+    );
+    */
   }
 
   effectuerVirement$(ordreVirement : OrdreVirement) :Observable<OrdreVirement> {

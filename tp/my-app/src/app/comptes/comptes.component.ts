@@ -26,7 +26,7 @@ export class ComptesComponent implements OnInit {
                 this.onRecupererComptes(); //pour raffraîchir valeurs des comptes 
                 //modifiées après virement
              },
-             error : (err)=>{console.log(err);}
+             error : (err)=>{console.log(err); this.message ="echec virement"}
              }
            );
   }
