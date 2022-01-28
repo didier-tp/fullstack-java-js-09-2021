@@ -3,6 +3,7 @@ import {  Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import { Compte } from '../data/compte';
 import { HttpClient } from '@angular/common/http';
+import { OrdreVirement } from '../data/ordreVirement';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,11 @@ export class ComptesService {
   rechercherComptesDuClient$(numClient :number) :Observable<Compte[]> {
     let url = this.baseUrl + `?numClient=${numClient}`;
     return this.http.get<Compte[]>(url);
+  }
+
+  effectuerVirement$(ordreVirement : OrdreVirement) :Observable<OrdreVirement> {
+    let url = this.baseUrl + `/virement`;
+    return this.http.post<OrdreVirement>(url,ordreVirement);
   }
   
 }

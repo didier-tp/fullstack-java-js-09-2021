@@ -12,3 +12,12 @@
     </tr>
 </table>
 
+<hr/>
+<h3>OrdreVirement</h3>
+<label>montant :</label><input type="number" [(ngModel)]="ordreVirement.montant" /> <br/>
+<label>numCptDeb:</label><input type="number" [(ngModel)]="ordreVirement.numCptDeb" /> <br/>
+<label>numCptCred :</label><input type="number" [(ngModel)]="ordreVirement.numCptCred" /> <br/>
+<button (click)="onVirement()">effectuer virement</button> <br/>
+{{message}}
+
+
