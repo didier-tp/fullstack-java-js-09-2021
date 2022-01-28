@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   listeCouleurs : string[] = [ "lightyellow", "white",
      "lightgrey" , "lightgreen" , "lightpink" , "lightblue"] ; 
 
-  constructor(public preferencesService : PreferencesService) { }
+  constructor(public preferencesService : PreferencesService ) { }
 
   ngOnInit(): void {
   }
