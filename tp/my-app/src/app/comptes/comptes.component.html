@@ -18,6 +18,6 @@
 <label>numCptDeb:</label><input type="number" [(ngModel)]="ordreVirement.numCptDeb" /> <br/>
 <label>numCptCred :</label><input type="number" [(ngModel)]="ordreVirement.numCptCred" /> <br/>
 <button (click)="onVirement()">effectuer virement</button> <br/>
-{{message}}
+<span [style.color]="virementOk?'green':'red'">{{message}}</span>
 
 

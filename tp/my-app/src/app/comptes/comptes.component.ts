@@ -12,10 +12,23 @@ export class ComptesComponent implements OnInit {
 
   numClient : number | undefined;
   listeComptes : Compte[] = [];
+  message:string ="virement pas encore effectué";
+  virementOk : boolean = false;
 
   ordreVirement : OrdreVirement = new OrdreVirement();
 
   onVirement(){
+    this.comptesService.effectuerVirement$(this.ordreVirement)
+           .subscribe({
+             next: (ordreVirementExecute : OrdreVirement)=>{
+                this.message = ordreVirementExecute.message; 
+                this.virementOk = ordreVirementExecute.ok?true:false;
+                this.onRecupererComptes(); //pour raffraîchir valeurs des comptes 
+                //modifiées après virement
+             },
+             error : (err)=>{console.log(err);}
+             }
+           );
   }
 
   onRecupererComptes(){
