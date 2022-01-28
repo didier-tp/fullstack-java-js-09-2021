@@ -3,7 +3,7 @@
 <input type="number" [(ngModel)]="numClient" /> <br/>
 <button (click)="onRecupererComptes()">rechercher comptes du client</button> <br/>
 
-<table border="1">
+<table class="table" border="1">
    <tr><th>numero</th><th>label</th><th>solde</th></tr>
    <tr *ngFor="let c of listeComptes">
        <td>{{c.numero}}</td>
