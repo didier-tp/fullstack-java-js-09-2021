@@ -28,7 +28,7 @@ import tp.jeeApp.service.CompteService;
 
 @RestController //composant spring de type crontroleur pour WS REST **
 @RequestMapping(value="/bank-api/compte" , headers="Accept=application/json")
-@CrossOrigin(value = "*" , methods= {  RequestMethod.GET , RequestMethod.POST}) //configurer autorisations CORS
+//@CrossOrigin(value = "*" , methods= {  RequestMethod.GET , RequestMethod.POST}) //configurer autorisations CORS
 public class CompteRestCtrl {
 	
 	@Autowired //ou @Inject

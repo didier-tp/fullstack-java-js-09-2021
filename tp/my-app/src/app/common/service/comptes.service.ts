@@ -9,7 +9,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ComptesService {
 
-  baseUrl = "http://localhost:8080/jeeApp/bank-api/compte";
+  //baseUrl = "http://localhost:8080/jeeApp/bank-api/compte"; //avec autorisations CORS coté serveur
+  baseUrl = "/bank-api/compte"; //url incomplète (relative) possible avec une configuration
+  // "reverse-proxy" (ng serve --proxy-conf proxy.conf.json)
 
   constructor(private http : HttpClient) { }
 
