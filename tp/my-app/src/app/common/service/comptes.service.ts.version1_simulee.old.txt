@@ -2,20 +2,24 @@ import { Injectable } from '@angular/core';
 import {  Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import { Compte } from '../data/compte';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ComptesService {
 
-  baseUrl = "http://localhost:8080/jeeApp/bank-api/comptes";
-
-  constructor(private http : HttpClient) { }
+  //valeurs en dur pour pré-version simulée.
+  private listeComptes : Compte[] = [
+    new Compte(1,"compteA",120.0),
+    new Compte(2,"compteB",50.0)
+  ];
 
   rechercherComptesDuClient$(numClient :number) :Observable<Compte[]> {
-    let url = this.baseUrl + `?numClient=${numClient}`;
-    return this.http.get<Compte[]>(url);
+    return of(this.listeComptes)
+           .pipe(
+             delay(330) //simuler un temps d'attente de 330 ms
+           );
   }
-  
+
+  constructor() { }
 }

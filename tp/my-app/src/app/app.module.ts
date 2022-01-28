@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TogglePanelComponent } from './toggle-panel/toggle-panel.component';
 import { ComptesComponent } from './comptes/comptes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ComptesComponent } from './comptes/comptes.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
